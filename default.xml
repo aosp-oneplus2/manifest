@@ -69,7 +69,6 @@
   <project path="frameworks/support" name="platform/frameworks/support" groups="pdk-cw-fs,pdk-fs" remote="aosp"/>
 
 <!-- LineageOS -->
-
   <project path="external/libncurses" name="android_external_libncurses" remote="laos" />  
   <project path="hardware/qcom/audio/default" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="laos" />
   <project path="hardware/qcom/audio-caf/msm8994" name="LineageOS/android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="github" revision="cm-14.1-caf-8994" />
@@ -79,7 +78,7 @@
   <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" groups="qcom,qcom_gps" remote="laos" />
   <project path="hardware/qcom/media" name="android_hardware_qcom_media" groups="qcom" remote="laos" />
   <project path="hardware/qcom/media-caf/msm8994" name="LineageOS/android_hardware_qcom_media" groups="qcom" remote="github" revision="cm-14.1-caf-8994" />
-  <project path="device/qcom/sepolicy" name="LineageOS/android_device_qcom_sepolicy" remote="laos" />
+  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="laos" />
 <!-- End LineageOS -->
 
 <!-- BEGIN AOSP-CAF -->
@@ -416,7 +415,7 @@
   <project path="hardware/google/apf" name="platform/hardware/google/apf" groups="pdk" revision="android-framework.lnx.2.0.r5-rel" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" revision="android-framework.lnx.2.0.r5-rel" />
   <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" revision="android-framework.lnx.2.0.r5-rel" />
-  <project path="hardware/qcom/bootctrl" name="platform/hardware/qcom/bootctrl" groups="pdk" revision="android-blash.lnx.1.1.r5-rel" />
+  <project path="hardware/qcom/bootctrl" name="platform/hardware/qcom/bootctrl" groups="pdk" revision="android-blast.lnx.1.1.r5-rel" />
   <project path="libcore" name="platform/libcore" groups="pdk" revision="android-framework.lnx.2.0.r5-rel" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" revision="android-framework.lnx.2.0.r5-rel" />
   <project path="ndk" name="platform/ndk" groups="generic_fs" revision="android-framework.lnx.2.0.r5-rel" />
@@ -509,7 +508,7 @@
   <project path="prebuilts/ninja/linux-x86" name="platform/prebuilts/ninja/linux-x86" groups="linux,pdk,tradefed" revision="android-framework.lnx.2.0.r5-rel"/>
   <project path="prebuilts/python/linux-x86/2.7.5" name="platform/prebuilts/python/linux-x86/2.7.5" groups="linux,pdk,pdk-cw-fs,pdk-fs" revision="android-framework.lnx.2.0.r5-rel" />
   <project path="prebuilts/qemu-kernel" name="platform/prebuilts/qemu-kernel" groups="pdk" clone-depth="1" revision="android-framework.lnx.2.0.r5-rel" />
-  <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk" />
+  <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk" revision="android-framework.lnx.2.0.r5-rel" clone-depth="1" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" revision="android-framework.lnx.2.0.r5-rel" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs,pdk-fs" revision="android-framework.lnx.2.0.r5-rel"/>
   <project path="system/ca-certificates" name="platform/system/ca-certificates" groups="pdk" revision="android-framework.lnx.2.0.r5-rel"/>
