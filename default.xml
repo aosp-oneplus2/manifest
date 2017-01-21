@@ -61,7 +61,6 @@
   <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="rro" />
   <project path="packages/services/Telephony" name="platform_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="rro" />
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" revision="android-framework.lnx.2.0.r5-rel" />
-  <project path="vendor/aosp" name="platform_vendor_aosp" remote="rro" />
   <project path="manifest" name="gtpitch/manifest" remote="github" revision="n-mr1" />
   <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk-fs" remote="rro" />
   <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" groups="pdk-fs" remote="rro" />
@@ -78,12 +77,13 @@
   <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" groups="qcom,qcom_gps" remote="laos" />
   <project path="hardware/qcom/media" name="android_hardware_qcom_media" groups="qcom" remote="laos" />
   <project path="hardware/qcom/media-caf/msm8994" name="LineageOS/android_hardware_qcom_media" groups="qcom" remote="github" revision="cm-14.1-caf-8994" />
-  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="laos" />
 <!-- End LineageOS -->
 
 <!-- BEGIN AOSP-CAF -->
   <project name="platform_build_kati" path="build/kati" remote="aosp-caf" />
   <project name="device_qcom_common" path="device/qcom/common" remote="aosp-caf" />
+  <project name="device_qcom_sepolicy" path="device/qcom/sepolicy" remote="aosp-caf" />
+  <project name="platform_vendor_aosp" path="vendor/aosp" remote="aosp-caf" />
   <project name="platform_art" path="art" remote="aosp-caf" />
   <project name="platform_bionic" path="bionic" remote="aosp-caf" />
   <project name="platform_external_ant-wireless_ant_native" path="external/ant-wireless/ant_native" remote="aosp-caf" />
