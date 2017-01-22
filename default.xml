@@ -38,10 +38,7 @@
 	   revision="nougat" />
 
 
-  <project path="build" name="platform_build" groups="pdk,tradefed" remote="rro" >
-    <copyfile src="core/root.mk" dest="Makefile" />
-    <copyfile src="build.sh" dest="build.sh" />
-  </project>
+
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" revision="android-framework.lnx.2.0.r5-rel" />
   <project path="build/soong" name="platform/build/soong" groups="pdk,tradefed" revision="android-framework.lnx.2.0.r5-rel">
     <linkfile src="root.bp" dest="Android.bp" />
@@ -50,20 +47,11 @@
 
   <!-- AOSP-OMS -->
 
-  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="rro" />
   <project path="packages/apps/Snap" name="platform_packages_apps_Snap" groups="pdk" remote="rro" />
-  <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" remote="rro" />
-  <project path="system/core" name="platform_system_core" groups="pdk" remote="rro" />
-  <project path="frameworks/av" name="platform_frameworks_av" groups="pdk" remote="rro" />
   <project path="packages/apps/Nfc" name="platform_packages_apps_Nfc" groups="apps_nfc,pdk-fs" remote="rro" />
-  <project path="system/sepolicy" name="platform_system_sepolicy" groups="pdk" remote="rro" />
-  <project path="frameworks/native" name="platform_frameworks_native" groups="pdk" remote="rro" />
   <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="rro" />
-  <project path="packages/services/Telephony" name="platform_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="rro" />
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" revision="android-framework.lnx.2.0.r5-rel" />
   <project path="manifest" name="gtpitch/manifest" remote="github" revision="n-mr1" />
-  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk-fs" remote="rro" />
-  <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" groups="pdk-fs" remote="rro" />
   <project path="packages/apps/Browser" name="platform_packages_apps_Browser" remote="rro" />
   <project path="frameworks/support" name="platform/frameworks/support" groups="pdk-cw-fs,pdk-fs" remote="aosp"/>
 
@@ -81,6 +69,19 @@
 
 <!-- BEGIN AOSP-CAF -->
   <project name="platform_build_kati" path="build/kati" remote="aosp-caf" />
+  <project path="build" name="platform_build" groups="pdk,tradefed" remote="aosp-caf" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <copyfile src="build.sh" dest="build.sh" />
+  </project>	
+  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="aosp-caf" />
+  <project path="frameworks/av" name="platform_frameworks_av" groups="pdk" remote="aosp-caf" />
+  <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" remote="aosp-caf" />
+  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk-fs" remote="aosp-caf" />
+  <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" groups="pdk-fs" remote="aosp-caf" />
+  <project path="system/core" name="platform_system_core" groups="pdk" remote="aosp-caf" />	
+  <project path="system/sepolicy" name="platform_system_sepolicy" groups="pdk" remote="aosp-caf" />
+  <project path="frameworks/native" name="platform_frameworks_native" groups="pdk" remote="aosp-caf" />
+  <project path="packages/services/Telephony" name="platform_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="aosp-caf" />	
   <project name="device_qcom_common" path="device/qcom/common" remote="aosp-caf" />
   <project name="device_qcom_sepolicy" path="device/qcom/sepolicy" remote="aosp-caf" />
   <project name="platform_vendor_aosp" path="vendor/aosp" remote="aosp-caf" />
