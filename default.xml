@@ -435,6 +435,7 @@
   <project path="packages/apps/EmergencyInfo" name="platform/packages/apps/EmergencyInfo" revision="android-framework.lnx.2.0.r5-rel" />
   <project path="packages/apps/ExactCalculator" name="platform/packages/apps/ExactCalculator" groups="pdk-fs" revision="android_ui.lnx.2.1.r5-rel" />
   <project path="packages/apps/Exchange" name="platform/packages/apps/Exchange" revision="android_ui.lnx.2.1.r5-rel" />
+  <project name="platform/packages/apps/SnapdragonCamera" path="packages/apps/SnapdragonCamera" revision="refs/heads/camera.lnx.1.0.r5-rel"/>  
   <project path="packages/apps/SnapdragonGallery" name="platform/packages/apps/SnapdragonGallery" revision="android_ui.lnx.2.1.r5-rel" />
   <project path="packages/apps/FMRadio" name="platform/packages/apps/FMRadio" groups="pdk-fs" revision="fm.lnx.2.1.r5-rel" />
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" groups="pdk-fs" revision="android-framework.lnx.2.0.r5-rel" />
