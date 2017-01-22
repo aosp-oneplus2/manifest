@@ -71,7 +71,6 @@
   <project name="platform_build_kati" path="build/kati" remote="aosp-caf" />
   <project path="build" name="platform_build" groups="pdk,tradefed" remote="aosp-caf" >
     <copyfile src="core/root.mk" dest="Makefile" />
-    <copyfile src="build.sh" dest="build.sh" />
   </project>	
   <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="aosp-caf" />
   <project path="frameworks/av" name="platform_frameworks_av" groups="pdk" remote="aosp-caf" />
