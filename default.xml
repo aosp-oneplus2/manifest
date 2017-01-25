@@ -47,9 +47,8 @@
 
   <!-- AOSP-OMS -->
 
-  <project path="packages/apps/Snap" name="platform_packages_apps_Snap" groups="pdk" remote="rro" />
   <project path="packages/apps/Nfc" name="platform_packages_apps_Nfc" groups="apps_nfc,pdk-fs" remote="rro" />
-  <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="rro" />
+  <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="aosip" />
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" revision="android-framework.lnx.2.0.r5-rel" />
   <project path="manifest" name="gtpitch/manifest" remote="github" revision="n-mr1" />
   <project path="packages/apps/Browser" name="platform_packages_apps_Browser" remote="rro" />
@@ -301,7 +300,7 @@
   <project path="external/mesa3d" name="platform/external/mesa3d" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/messageformat" name="platform/external/messageformat" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/minijail" name="platform/external/minijail" />
-  <project path="external/mm-dash" name="platform/external/mm-dash" revision="refs/heads/video-userspace.lnx.2.1.r5-rel" />
+  <project path="external/mm-dash" name="halogenOS/android_external_mm-dash" revision="XOS-7.1" remote="github" />
   <project path="external/mmc-utils" name="platform/external/mmc-utils" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/mockftpserver" name="platform/external/mockftpserver" groups="pdk-fs" />
   <project path="external/mockito" name="platform/external/mockito" groups="pdk-cw-fs,pdk-fs" />
