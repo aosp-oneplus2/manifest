@@ -1,10 +1,10 @@
-AOSP+OMS Nougat
+AOSP-CAF with OMS for Oneplus2
 ===========
 
-To initialize your local repository using the AOSP-OMS trees, use a 
+To initialize your local repository using the AOSP-CAF trees, use a 
 command like this:
 ````bash
-repo init -u git://github.com/AOSP-RRO/manifest.git -b nougat
+repo init -u git://github.com/aosp-oneplus2/manifest.git -b n-mr1
 ```
 Then to sync up:
 ````bash
@@ -12,10 +12,7 @@ repo sync
 ```
 Finally to build:
 ````bash
-./build.sh device_codename
+source build/envsetup.sh
+lunch aosp_oneplus2
+make otapackage -jxx
 ```
-Example:
-````bash
-./build.sh falcon
-./build.sh titan
-./build.sh osprey
