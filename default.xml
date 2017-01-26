@@ -447,7 +447,7 @@
   <project path="frameworks/support" name="platform/frameworks/support" revision="android-framework.lnx.2.0.r5-rel" />
   <project name="platform/packages/apps/StorageManager" path="packages/apps/StorageManager" revision="android-framework.lnx.2.0.r5-rel"/>
   <project path="packages/apps/Tag" name="platform/packages/apps/Tag" groups="pdk-fs" revision="android-framework.lnx.2.0.r5-rel" />
-  <project path="packages/apps/Terminal" name="platform/packages/apps/Terminal" groups="pdk-fs" remote="android-framework.lnx.2.0.r5-rel" />
+  <project path="packages/apps/Terminal" name="platform/packages/apps/Terminal" groups="pdk-fs" revision="android-framework.lnx.2.0.r5-rel" />
   <project path="packages/apps/Test/connectivity" name="platform/packages/apps/Test/connectivity" revision="android-framework.lnx.2.0.r5-rel" />
   <project path="packages/apps/TvSettings" name="platform/packages/apps/TvSettings" groups="generic_fs" revision="android-framework.lnx.2.0.r5-rel" />
   <project path="packages/apps/TV" name="platform/packages/apps/TV" revision="android_ui.lnx.2.1.r5-rel" />
