@@ -40,6 +40,9 @@
 
   <!-- op2 -->
 
+  <project path="build" name="platform_build" groups="pdk,tradefed" remote="op2" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>	
   <project path="manifest" name="manifest" remote="op2" />
   <project path="frameworks/base" name="platform_frameworks_base" remote="op2" />
   <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="op2" />	
@@ -59,9 +62,6 @@
 
 <!-- BEGIN AOSP-CAF -->
   <project name="platform_build_kati" path="build/kati" remote="aosp-caf" />
-  <project path="build" name="platform_build" groups="pdk,tradefed" remote="aosp-caf" >
-    <copyfile src="core/root.mk" dest="Makefile" />
-  </project>	
   <project path="frameworks/av" name="platform_frameworks_av" groups="pdk" remote="aosp-caf" />
   <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" remote="aosp-caf" />
   <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" groups="pdk-fs" remote="aosp-caf" />
