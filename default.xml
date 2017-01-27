@@ -71,7 +71,6 @@
   <project path="packages/services/Telephony" name="platform_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="aosp-caf" />	
   <project name="device_qcom_common" path="device/qcom/common" remote="aosp-caf" />
   <project name="device_qcom_sepolicy" path="device/qcom/sepolicy" remote="aosp-caf" />
-  <project name="platform_vendor_aosp" path="vendor/aosp" remote="aosp-caf" />
   <project name="platform_art" path="art" remote="aosp-caf" />
   <project name="platform_bionic" path="bionic" remote="aosp-caf" />
   <project name="platform_external_ant-wireless_ant_native" path="external/ant-wireless/ant_native" remote="aosp-caf" />
