@@ -18,6 +18,10 @@
            review="gerrit.aospa.co"  
            revision="nougat-mr1"/>
 	
+  <remote  name="blobs"
+           fetch="https://github.com/ThankYouMario"
+           revision="nougat-mr1"/>	
+	
   <remote  name="caf"
            fetch="git://codeaurora.org/quic/la"
            review="codeaurora.org" />
