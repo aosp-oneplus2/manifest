@@ -42,114 +42,71 @@
   <project path="manifest" name="AOSPA/manifest" remote="aospa" groups="aospa" />
 
   <!-- Build repositories -->
-  <remove-project name="platform_build" />
   <project path="build" name="AOSPA/android_build" remote="aospa" groups="aospa" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <remove-project name="platform_build_kati" />
   <project path="build/kati" name="AOSPA/android_build_kati" remote="aospa" groups="aospa" />
 
   <project path="vendor/qcom/sdclang-3.8/linux-x86" name="proprietary_vendor_qcom_sdclang-3.8_linux-x86" remote="blobs"/>
-
-  <remove-project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="AOSPA/android_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" remote="aospa"/>
-  <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="AOSPA/android_gcc_linux-x86_arm-linux-android-4.9" remote="aospa"/>
 
   <!-- Hardware -->
-  <remove-project name="device_qcom_common" />
   <project path="device/qcom/common" name="AOSPA/android_device_qcom_common" remote="aospa" groups="aospa" />
-  <remove-project name="device_qcom_sepolicy" />
   <project path="device/qcom/sepolicy" name="AOSPA/android_device_qcom_sepolicy" remote="aospa" groups="aospa" />
-  <remove-project name="platform_hardware_qcom_bt"/>
   <project path="hardware/qcom/bt" name="AOSPA/android_hardware_qcom_bt" remote="aospa" groups="aospa" />
-  <remove-project name="platform_hardware_ril" />
   <project path="hardware/ril" name="AOSPA/android_hardware_ril" remote="aospa" />
-  <remove-project name="platform_hardware_libhardware" />
   <project path="hardware/libhardware" name="AOSPA/android_hardware_libhardware" remote="aospa" />
-  <remove-project name="platform_hardware_broadcom_libbt" />
   <project path="hardware/broadcom/libbt" name="AOSPA/android_hardware_broadcom_libbt" remote="aospa" groups="aospa" />
 
   <!-- Native -->
-  <remove-project name="platform_bionic" />
   <project path="bionic" name="AOSPA/android_bionic" remote="aospa" groups="aospa" />
-  <remove-project name="platform_art" />
   <project path="art" name="AOSPA/android_art" remote="aospa" groups="aospa" />
 
   <!-- Frameworks -->
-  <remove-project name="platform_frameworks_av" />
   <project path="frameworks/av" name="AOSPA/android_frameworks_av" remote="aospa" groups="aospa" />
-  <remove-project name="platform_frameworks_base" />
   <project path="frameworks/base" name="AOSPA/android_frameworks_base" remote="aospa" groups="aospa" />
-  <remove-project name="platform_frameworks_native" />
   <project path="frameworks/native" name="AOSPA/android_frameworks_native" remote="aospa" groups="aospa" />
-  <remove-project name="platform_frameworks_opt_telephony" />
   <project path="frameworks/opt/telephony" name="AOSPA/android_frameworks_opt_telephony" remote="aospa" groups="aospa" />
 
   <!-- Packages -->
   <!-- TODO: Add ParanoidHub -->
-  <remove-project name="platform/packages/apps/Calendar" />
   <project path="packages/apps/Calendar" name="AOSPA/android_packages_apps_Calendar" remote="aospa" groups="aospa" />
-  <remove-project name="platform/packages/apps/Camera2" />
   <project path="packages/apps/Camera2" name="AOSPA/android_packages_apps_Camera2" remote="aospa" groups="aospa" />
-  <remove-project name="platform_packages_apps_Settings" />
   <project path="packages/apps/Settings" name="AOSPA/android_packages_apps_Settings" remote="aospa" groups="aospa" />
-  <remove-project name="platform/packages/apps/DeskClock" />
   <project path="packages/apps/DeskClock" name="AOSPA/android_packages_apps_DeskClock" remote="aospa" groups="aospa" />
-  <remove-project name="platform/packages/apps/SnapdragonCamera" />
   <project path="packages/apps/SnapdragonCamera" name="AOSPA/android_packages_apps_SnapdragonCamera" remote="aospa" groups="aospa" />
-  <remove-project name="platform_packages_inputmethods_LatinIME" />
   <project path="packages/inputmethods/LatinIME" name="AOSPA/android_packages_inputmethods_LatinIME" remote="aospa" groups="aospa" />
-  <remove-project name="platform/packages/apps/PackageInstaller" />
   <project path="packages/apps/PackageInstaller" name="AOSPA/android_packages_apps_PackageInstaller" remote="aospa" groups="aospa" />
 
   <!-- External -->
-  <remove-project name="platform_external_e2fsprogs" />
   <project path="external/e2fsprogs" name="AOSPA/android_external_e2fsprogs" remote="aospa" groups="aospa" />
-  <remove-project name="platform_external_f2fs-tools" />
   <project path="external/f2fs-tools" name="AOSPA/android_external_f2fs-tools" remote="aospa" groups="aospa" />
-  <remove-project name="platform_external_libnfc-nci" />
   <project path="external/libnfc-nci" name="AOSPA/android_external_libnfc-nci" remote="aospa" groups="aospa" />
-  <remove-project name="platform_external_libjpeg-turbo" />
   <project path="external/libjpeg-turbo" name="AOSPA/android_external_libjpeg-turbo" remote="aospa" groups="aospa" />
-  <remove-project name="platform_external_libpng" />
   <project path="external/libpng" name="AOSPA/android_external_libpng" remote="aospa" groups="aospa" />
-  <remove-project name="platform_external_skia" />
   <project path="external/skia" name="AOSPA/android_external_skia" remote="aospa" groups="aospa" />
-  <remove-project name="platform_external_jemalloc" />
   <project path="external/jemalloc" name="AOSPA/android_external_jemalloc" remote="aospa" groups="aospa" />
-  <remove-project name="platform_external_sqlite" />
   <project path="external/sqlite" name="AOSPA/android_external_sqlite" remote="aospa" groups="aospa" />
-  <remove-project name="platform_external_zlib" />
   <project path="external/zlib" name="AOSPA/android_external_zlib" remote="aospa" groups="aospa" />
 
   <!-- System -->
-  <remove-project name="platform_system_bt" />
   <project path="system/bt" name="AOSPA/android_system_bt" remote="aospa" groups="aospa" />
-  <remove-project name="platform_system_core" />
   <project path="system/core" name="AOSPA/android_system_core" remote="aospa" groups="aospa" />
-  <remove-project name="platform_system_extras" />
   <project path="system/extras" name="AOSPA/android_system_extras" remote="aospa" groups="aospa" />
-  <remove-project name="platform_system_media" />
   <project path="system/media" name="AOSPA/android_system_media" remote="aospa" groups="aospa" />
-  <remove-project name="platform_system_sepolicy" />
   <project path="system/sepolicy" name="AOSPA/android_system_sepolicy" remote="aospa" groups="aospa" />
-  <remove-project name="platform_system_vold" />
   <project path="system/vold" name="AOSPA/android_system_vold" remote="aospa" groups="aospa" />
 
   <!-- Vendor -->
   <project path="vendor/pa" name="AOSPA/android_vendor_pa" remote="aospa" groups="aospa" >
     <copyfile src="build.sh" dest="rom-build.sh" />
   </project>
-  <remove-project name="platform/vendor/qcom-opensource/bluetooth" />
   <project path="vendor/qcom/opensource/bluetooth" name="AOSPA/android_vendor_qcom_opensource_bluetooth" remote="aospa" groups="aospa" />
 
   <!-- Telephony -->
-  <remove-project name="platform_packages_apps_Dialer" />
   <project path="packages/apps/Dialer" name="AOSPA/android_packages_apps_Dialer" remote="aospa" groups="aospa" />
-  <remove-project name="platform_packages_services_Telephony" />
   <project path="packages/services/Telephony" name="AOSPA/android_packages_services_Telephony" remote="aospa" groups="aospa" />
-  <remove-project name="platform_packages_services_Telecomm" />
   <project path="packages/services/Telecomm" name="AOSPA/android_packages_services_Telecomm" remote="aospa" groups="aospa" />
 
 
@@ -159,14 +116,6 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-
-  <!-- op2 -->
-
-  <project path="build" name="platform_build" groups="pdk,tradefed" remote="op2" >
-    <copyfile src="core/root.mk" dest="Makefile" />
-  </project>	
-  <project path="frameworks/base" name="platform_frameworks_base" remote="op2" />
-  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="op2" />	
 
 <!-- LineageOS -->
   <project path="external/libncurses" name="android_external_libncurses" remote="laos" />  
@@ -181,51 +130,27 @@
 <!-- End LineageOS -->
 
 <!-- BEGIN AOSP-CAF -->
-  <project name="platform_build_kati" path="build/kati" remote="aosp-caf" />
-  <project path="frameworks/av" name="platform_frameworks_av" groups="pdk" remote="aosp-caf" />
-  <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" remote="aosp-caf" />
-  <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" groups="pdk-fs" remote="aosp-caf" />
-  <project path="system/core" name="platform_system_core" groups="pdk" remote="aosp-caf" />	
-  <project path="system/sepolicy" name="platform_system_sepolicy" groups="pdk" remote="aosp-caf" />
-  <project path="frameworks/native" name="platform_frameworks_native" groups="pdk" remote="aosp-caf" />
-  <project path="packages/services/Telephony" name="platform_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="aosp-caf" />	
-  <project name="device_qcom_common" path="device/qcom/common" remote="aosp-caf" />
-  <project name="device_qcom_sepolicy" path="device/qcom/sepolicy" remote="aosp-caf" />
-  <project name="platform_art" path="art" remote="aosp-caf" />
-  <project name="platform_bionic" path="bionic" remote="aosp-caf" />
+  <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" remote="aosp-caf" />		
   <project name="platform_external_ant-wireless_ant_native" path="external/ant-wireless/ant_native" remote="aosp-caf" />
   <project name="platform_external_ant-wireless_antradio-library" path="external/ant-wireless/antradio-library" remote="aosp-caf" />
   <project name="platform_external_bash" path="external/bash" remote="aosp-caf" />
   <project name="platform_external_busybox" path="external/busybox" remote="aosp-caf" />
   <project name="platform_external_connectivity" path="external/connectivity" remote="aosp-caf" />
-  <project name="platform_external_e2fsprogs" path="external/e2fsprogs" remote="aosp-caf" />
   <project name="platform_external_exfat" path="external/exfat" remote="aosp-caf" />
-  <project name="platform_external_f2fs-tools" path="external/f2fs-tools" remote="aosp-caf" />
   <project name="platform_external_fsck_msdos" path="external/fsck_msdos" remote="aosp-caf" />
   <project name="platform_external_fuse" path="external/fuse" remote="aosp-caf" />
   <project name="platform_external_mksh" path="external/mksh" remote="aosp-caf" />
   <project name="platform_external_ntfs-3g" path="external/ntfs-3g" remote="aosp-caf" />
   <project name="platform_external_okhttp" path="external/okhttp" remote="aosp-caf" />
-  <project name="platform_external_skia" path="external/skia" remote="aosp-caf" />
   <project name="platform_external_tinyalsa" path="external/tinyalsa" remote="aosp-caf" />
   <project name="platform_external_tinycompress" path="external/tinycompress" remote="aosp-caf" />
   <project name="platform_external_wpa_supplicant_8" path="external/wpa_supplicant_8" remote="aosp-caf" />
-  <project name="platform_external_zlib" path="external/zlib" remote="aosp-caf" />
-  <project name="platform_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="aosp-caf" />
-  <project name="platform_hardware_libhardware" path="hardware/libhardware" remote="aosp-caf" />
-  <project name="platform_hardware_qcom_bt" path="hardware/qcom/bt" remote="aosp-caf" />
   <project name="platform_hardware_qcom_bt" path="hardware/qcom/bt-caf" revision="n-mr1-caf" remote="aosp-caf" />
   <project name="platform_hardware_qcom_keymaster" path="hardware/qcom/keymaster" remote="aosp-caf" />
   <project name="platform_hardware_qcom_wlan" path="hardware/qcom/wlan" remote="aosp-caf" />
   <project name="platform_hardware_qcom_wlan" path="hardware/qcom/wlan-caf" revision="n-mr1-caf" remote="aosp-caf" />
-  <project name="platform_hardware_ril" path="hardware/ril" remote="aosp-caf" />
   <project name="platform_hardware_ril" path="hardware/ril-caf" revision="n-mr1-caf" remote="aosp-caf" />
-  <project name="platform_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" remote="aosp-caf" />
   <project name="platform_packages_providers_MediaProvider" path="packages/providers/MediaProvider" remote="aosp-caf" />
-  <project name="platform_system_bt" path="system/bt" remote="aosp-caf" />
-  <project name="platform_system_extras" path="system/extras" remote="aosp-caf" />
-  <project name="platform_system_media" path="system/media" remote="aosp-caf" />
-  <project name="platform_system_vold" path="system/vold" remote="aosp-caf" />
   <project name="platform_system_qcom" path="system/qcom" remote="aosp-caf" />
   <project name="platform_vendor_qcom-opensource_dataservices" path="vendor/qcom/opensource/dataservices" remote="aosp-caf" />
   <project name="platform_vendor_qcom-opensource_dpm" path="vendor/qcom/opensource/dpm" remote="aosp-caf" />
@@ -341,7 +266,6 @@
   <project path="external/javassist" name="platform/external/javassist" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/jcommander" name="platform/external/jcommander" groups="pdk" />
   <project path="external/jdiff" name="platform/external/jdiff" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/jemalloc" name="platform/external/jemalloc" groups="pdk" />
   <project path="external/jetty" name="platform/external/jetty" groups="pdk-fs" />
   <project path="external/jhead" name="platform/external/jhead" groups="pdk" />
   <project path="external/jmdns" name="platform/external/jmdns" groups="pdk-cw-fs,pdk-fs" />
@@ -370,13 +294,11 @@
   <project path="external/libgdx" name="platform/external/libgdx" />
   <project path="external/libgsm" name="platform/external/libgsm" groups="pdk" />
   <project path="external/libhevc" name="platform/external/libhevc" groups="pdk-fs" />
-  <project path="external/libjpeg-turbo" name="platform/external/libjpeg-turbo" groups="pdk" />
   <project path="external/liblzf" name="platform/external/liblzf" groups="pdk" />
   <project path="external/libmicrohttpd" name="platform/external/libmicrohttpd" />
   <project path="external/libmpeg2" name="platform/external/libmpeg2" groups="pdk" />
   <project path="external/libmtp" name="platform/external/libmtp" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/libnetfilter_conntrack" name="platform/external/libnetfilter_conntrack" />
-  <project path="external/libnfc-nci" name="platform/external/libnfc-nci" groups="pdk" revision="nfc-aosp.lnx.2.0.r5-rel" />
   <project path="external/libnfc-nxp" name="platform/external/libnfc-nxp" groups="pdk" />
   <project path="external/libnfnetlink" name="platform/external/libnfnetlink" />
   <project path="external/libnl" name="platform/external/libnl" groups="pdk" />
@@ -384,7 +306,6 @@
   <project path="external/libopus" name="platform/external/libopus" groups="pdk" />
   <project path="external/libpcap" name="platform/external/libpcap" groups="pdk,pdk-cw-fs,pdk-fs" />
   <project path="external/libphonenumber" name="platform/external/libphonenumber" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/libpng" name="platform/external/libpng" groups="pdk" />
   <project path="external/libselinux" name="platform/external/libselinux" groups="pdk" />
   <project path="external/libunwind" name="platform/external/libunwind" groups="pdk" />
   <project path="external/libunwind_llvm" name="platform/external/libunwind_llvm" />
@@ -458,7 +379,6 @@
   <project path="external/sonic" name="platform/external/sonic" groups="pdk" />
   <project path="external/sonivox" name="platform/external/sonivox" groups="pdk" />
   <project path="external/speex" name="platform/external/speex" groups="pdk" />
-  <project path="external/sqlite" name="platform/external/sqlite" groups="pdk" />
   <project path="external/squashfs-tools" name="platform/external/squashfs-tools" groups="pdk" />
   <project path="external/srtp" name="platform/external/srtp" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/strace" name="platform/external/strace" groups="pdk-cw-fs,pdk-fs" />
@@ -518,7 +438,6 @@
   <project path="frameworks/webview" name="platform/frameworks/webview" groups="pdk-cw-fs,pdk-fs" revision="android-framework.lnx.2.0.r5-rel" />
   <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" groups="pdk-cw-fs,pdk-fs" revision="android-framework.lnx.2.0.r5-rel" />
   <project path="hardware/akm" name="platform/hardware/akm" revision="android-framework.lnx.2.0.r5-rel" />
-  <project path="hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" groups="pdk" revision="android-framework.lnx.2.0.r5-rel" />
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="pdk,broadcom_wlan" revision="android-framework.lnx.2.0.r5-rel" />
   <project path="hardware/google/apf" name="platform/hardware/google/apf" groups="pdk" revision="android-framework.lnx.2.0.r5-rel" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" revision="android-framework.lnx.2.0.r5-rel" />
@@ -530,21 +449,17 @@
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" groups="pdk-cw-fs,pdk-fs" revision="android_ui.lnx.2.1.r5-rel" />
   <project path="packages/apps/Browser2" name="platform/packages/apps/Browser2" revision="android-framework.lnx.2.0.r5-rel" />
   <project path="packages/apps/Calculator" name="platform/packages/apps/Calculator" groups="pdk-fs" revision="android_ui.lnx.2.1.r5-rel" />
-  <project path="packages/apps/Calendar" name="platform/packages/apps/Calendar" groups="pdk-fs" revision="android_ui.lnx.2.1.r5-rel" />
   <project path="packages/apps/CarrierConfig" name="platform/packages/apps/CarrierConfig" groups="pdk-fs" revision="android_ui.lnx.2.1.r5-rel" />
-  <project path="packages/apps/Camera2" name="platform/packages/apps/Camera2" groups="pdk-fs" revision="android-framework.lnx.2.0.r5-rel" />
   <project path="packages/apps/Camera" name="platform/packages/apps/Camera" groups="pdk-fs" revision="android-framework.lnx.2.0.r5-rel" />
   <project path="packages/apps/CellBroadcastReceiver" name="platform/packages/apps/CellBroadcastReceiver" groups="pdk-fs" revision="atel.lnx.2.0.r5-rel" />
   <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" groups="pdk-cw-fs,pdk-fs" revision="android-framework.lnx.2.0.r5-rel" />
   <project path="packages/apps/Contacts" name="platform/packages/apps/Contacts" groups="pdk-fs" revision="android_ui.lnx.2.1.r5-rel" />
   <project path="packages/apps/ContactsCommon" name="platform/packages/apps/ContactsCommon" groups="pdk-fs" revision="android_ui.lnx.2.1.r5-rel" />
-  <project path="packages/apps/DeskClock" name="platform/packages/apps/DeskClock" groups="pdk-fs" revision="android_ui.lnx.2.1.r5-rel" />
   <project path="packages/apps/DevCamera" name="platform/packages/apps/DevCamera" groups="pdk" revision="android-framework.lnx.2.0.r5-rel" />
   <project path="packages/apps/Email" name="platform/packages/apps/Email" groups="pdk-fs" revision="android_ui.lnx.2.1.r5-rel" />
   <project path="packages/apps/EmergencyInfo" name="platform/packages/apps/EmergencyInfo" revision="android-framework.lnx.2.0.r5-rel" />
   <project path="packages/apps/ExactCalculator" name="platform/packages/apps/ExactCalculator" groups="pdk-fs" revision="android_ui.lnx.2.1.r5-rel" />
-  <project path="packages/apps/Exchange" name="platform/packages/apps/Exchange" revision="android_ui.lnx.2.1.r5-rel" />
-  <project name="platform/packages/apps/SnapdragonCamera" path="packages/apps/SnapdragonCamera" revision="refs/heads/camera.lnx.1.0.r5-rel"/>  
+  <project path="packages/apps/Exchange" name="platform/packages/apps/Exchange" revision="android_ui.lnx.2.1.r5-rel" /> 
   <project path="packages/apps/SnapdragonGallery" name="platform/packages/apps/SnapdragonGallery" revision="android_ui.lnx.2.1.r5-rel" />
   <project path="packages/apps/FMRadio" name="platform/packages/apps/FMRadio" groups="pdk-fs" revision="fm.lnx.2.1.r5-rel" />
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" groups="pdk-fs" revision="android-framework.lnx.2.0.r5-rel" />
@@ -556,7 +471,6 @@
   <project path="packages/apps/SnapdragonMusic" name="platform/packages/apps/SnapdragonMusic" groups="pdk-fs" revision="android_ui.lnx.2.1.r5-rel" />
   <project path="packages/apps/MusicFX" name="platform/packages/apps/MusicFX" groups="pdk-fs" revision="android_ui.lnx.2.1.r5-rel" />
   <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" groups="pdk-fs" revision="android_ui.lnx.2.1.r5-rel" />
-  <project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller" groups="pdk-fs" revision="android-framework.lnx.2.0.r5-rel" />
   <project path="packages/apps/Phone" name="platform/packages/apps/Phone" groups="pdk-fs" revision="android_ui.lnx.2.1.r5-rel" />
   <project path="packages/apps/PhoneCommon" name="platform/packages/apps/PhoneCommon" groups="pdk-cw-fs,pdk-fs" revision="android_ui.lnx.2.1.r5-rel" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" groups="pdk-fs" revision="android_ui.lnx.2.1.r5-rel" />
@@ -592,7 +506,6 @@
   <project path="packages/screensavers/Basic" name="platform/packages/screensavers/Basic" groups="pdk-fs" revision="android-framework.lnx.2.0.r5-rel" />
   <project path="packages/screensavers/PhotoTable" name="platform/packages/screensavers/PhotoTable" groups="pdk-fs" revision="android-framework.lnx.2.0.r5-rel" />
   <project path="packages/screensavers/WebView" name="platform/packages/screensavers/WebView" groups="pdk-fs" revision="android-framework.lnx.2.0.r5-rel" />
-  <project path="packages/services/Telecomm" name="platform/packages/services/Telecomm" revision="atel.lnx.2.0.r5-rel" />
   <project path="packages/services/Car" name="platform/packages/services/Car" groups="adp8064,pdk-cw-fs,pdk-fs" revision="android-framework.lnx.2.0.r5-rel" />
   <project path="packages/services/Mms" name="platform/packages/services/Mms" groups="pdk-cw-fs,pdk-fs" revision="android-framework.lnx.2.0.r5-rel" />
   <project path="packages/wallpapers/LivePicker" name="platform/packages/wallpapers/LivePicker" groups="pdk-fs" revision="android-framework.lnx.2.0.r5-rel" />
@@ -604,8 +517,6 @@
   <project path="prebuilts/deqp" name="platform/prebuilts/deqp" groups="pdk-fs" revision="android-framework.lnx.2.0.r5-rel" />
   <project path="prebuilts/devtools" name="platform/prebuilts/devtools" groups="pdk-fs" revision="android-framework.lnx.2.0.r5-rel" />
   <project path="prebuilts/eclipse" name="platform/prebuilts/eclipse" groups="pdk" revision="android-framework.lnx.2.0.r5-rel" />
-  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" groups="pdk,linux,arm" revision="android-framework.lnx.2.0.r5-rel" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" groups="pdk,linux,arm" revision="android-framework.lnx.2.0.r5-rel" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" groups="pdk,linux" revision="android-framework.lnx.2.0.r5-rel" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" groups="pdk,linux" revision="android-framework.lnx.2.0.r5-rel" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" groups="pdk-fs" revision="android-framework.lnx.2.0.r5-rel"/>
@@ -646,7 +557,6 @@
   <project name="platform/vendor/nxp/opensource/external/libnfc-nci" path="vendor/nxp/opensource/external/libnfc-nci" revision="nfc.lnx.2.0.r5-rel"/>
   <project name="platform/vendor/nxp/opensource/frameworks" path="vendor/nxp/opensource/frameworks" revision="nfc.lnx.2.0.r5-rel"/>
   <project name="platform/vendor/nxp/opensource/packages/apps/Nfc" path="vendor/nxp/opensource/packages/apps/Nfc" revision="nfc.lnx.2.0.r5-rel"/>
-  <project groups="qcom" name="platform/vendor/qcom-opensource/bluetooth" path="vendor/qcom/opensource/bluetooth" revision="bt-qc.lnx.1.0.r5-rel"/>
   <project name="platform/vendor/qcom-opensource/fst-manager" path="vendor/qcom/opensource/fst-manager" revision="wigig.lnx.1.0.r5-rel"/>
   <project name="platform/vendor/qcom-opensource/mmc-utils" path="vendor/qcom/opensource/mmc-utils" revision="core-technologies.lnx.1.0.r5-rel"/>
   <project name="platform/vendor/qcom-opensource/rcs-service" path="vendor/qcom/opensource/rcs-service" revision="android_ui.lnx.2.1.r5-rel"/>
