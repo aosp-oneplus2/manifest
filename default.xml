@@ -37,7 +37,7 @@
            fetch="https://github.com/LineageOS"
            revision="refs/heads/cm-14.1" />	
 	
-<manifest>
+
   <!-- Manifest -->
   <project path="manifest" name="AOSPA/manifest" remote="aospa" groups="aospa" />
 
